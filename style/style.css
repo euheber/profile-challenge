@@ -28,37 +28,35 @@ body {
 }
 
 #main-box {
-    width: 90%;
-    height: 85%;
+  width: 80%;
+  height: 85%;
   background-color: var(--grey);
   padding-top: 1rem;
   position: absolute;
 }
 
-button{
-    background-color: transparent;
-    width: 5rem;
-    background-color: var(--lightgrey);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0.3rem auto 0 auto;
-    border-radius: 3px;
-    gap: 0.1rem;
-    cursor: pointer;
+button {
+  background-color: transparent;
+  width: 5rem;
+  background-color: var(--lightgrey);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.3rem auto 0 auto;
+  border-radius: 3px;
+  gap: 0.1rem;
+  cursor: pointer;
 }
 
-button:hover{
-    background-color: var(--grey);
+button:hover {
+  background-color: var(--grey);
 }
-
 
 /*profile-section*/
 
-
-#profile-section{
-    margin-bottom: 2rem;
-    text-align: center;
+#profile-section {
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 #profile-info {
@@ -71,20 +69,18 @@ button:hover{
 .profile-picture {
   border-radius: 50%;
   position: absolute;
-  top: -2.5rem
+  top: -2.5rem;
 }
 
-#contact-box{
-    margin-top: 2rem;
+#contact-box {
+  margin-top: 2rem;
 }
 
-#contact-box span{
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: 1.1rem;
+#contact-box span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
 }
-
-
 
 /*profile-section*/
 
@@ -96,73 +92,71 @@ button:hover{
   border-radius: 7px;
 }
 
-.box p{
-    font-size: 1.1rem;
-    font-weight: bold;
+.box p {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
-.box span{
-    font-size: 2.5rem;
+.box span {
+  font-size: 2.5rem;
 }
 
-.green{
-    background-color: var(--green);
+.green {
+  background-color: var(--green);
 }
 
-.blue{
-    background-color: var(--blue);
+.blue {
+  background-color: var(--blue);
 }
 
-.yellow{
-    background-color: var(--yellow);
+.yellow {
+  background-color: var(--yellow);
 }
-
 
 /*desktop*/
 
-@media(min-width: 1024px){
+@media (min-width: 1024px) {
+  button {
+    margin: 0 0.6rem 0 0;
+  }
+  #main-box {
+    width: 50%;
+    height: 50%;
+  }
 
-    button{
-        margin: 0 0.6rem 0 0 ;
-    }
-    #main-box{
-        width: 50%;
-        height: 50%;
-    }
+  .profile-picture {
+    position: initial;
+  }
 
-    .profile-picture{
-        position: initial;
-    }
+  #profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+  }
 
-    #profile-section{ 
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width:  90%;
-        margin: 0 auto;
-        text-align: left;
-    }
+  #contact-box {
+    margin: 0;
+  }
 
-    #contact-box{
-        margin: 0;
-    }
+  #profile-info {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
 
-    #profile-info{
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    #box-content{
-        display: flex;
-        margin-top: 3rem;
-        align-items: center;
-        justify-content: space-evenly;
-        width:  100%;
-    }
-    .box{
-        width: 25%;
-        margin: 0;
-    }
+  #box-content {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .box {
+    width: 25%;
+    margin: 0;
+  }
 }
